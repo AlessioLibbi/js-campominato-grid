@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+header {
+    background-color: white;
+    height: 80px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+.container {
+    width: 800px;
+    height: calc(100vh - 80px) ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black
+}
+#modalita {
+    width: 200px;
+    height: 20px;
+}
+
+.buttone {
+    width: 80px;
+    height: 20px;
+
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    width: calc(800px / 10);
+    height: calc(800px / 10);
+    border: 2px solid #000000;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
