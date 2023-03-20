@@ -20,7 +20,6 @@ button.addEventListener("click", function () {
         const currentNumber = i;
         const newItem = generateGridItem(currentNumber);
         newItem.addEventListener("click", handleItemClick);
-        
         grid.append(newItem);
     }
 
@@ -34,7 +33,6 @@ function generateGridItem(text) {
     const newSquare = document.createElement("div");
     let modalities = value.value
     newSquare.classList.add("grid-item", modalities);
-    
     newSquare.innerHTML = `<span>${text}</span>`;
     return newSquare;
 
@@ -43,9 +41,5 @@ function generateGridItem(text) {
 function handleItemClick() {
     const clickedNumber = parseInt(this.querySelector("span").textContent);
     console.log(clickedNumber);
-    if (clickedNumber % 2 === 0) {
-        this.classList.add("green");
-    } else {
-        this.classList.add("red");
-    }
+    this.classList.add("green");
 }
